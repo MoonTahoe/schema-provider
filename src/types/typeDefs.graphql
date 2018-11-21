@@ -25,4 +25,5 @@ type Query {
 
 type Mutation {
   register(email: ID!, password: String!): Member!
+  verifyAccount(email: ID!, code: String!): Member!
 }
